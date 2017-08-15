@@ -1,28 +1,44 @@
 {
-  "name": "optimizedhtml",
-  "version": "2.0.1",
-  "description": "OptimizedHTML - Start HTML Template",
-  "main": "index.js",
+  "name": "ampboilerplate",
+  "version": "0.0.1",
+  "description": "AMP boilerplate",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
-  "author": "WebDesign Master",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akella/gulp-amp.git"
+  },
+  "keywords": [
+    "gulp",
+    "amp"
+  ],
+  "config": {
+    "src": {
+      "sass": "src/sass"
+    },
+    "build": {
+      "css": "build/css"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "author": "Yuri Artiukh <akella.a@gmail.com> (http://riverco.de)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akella/gulp-amp/issues"
+  },
+  "homepage": "https://github.com/akella/gulp-amp#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "del": "^3.0.0",
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-cache": "^0.4.6",
-    "gulp-clean-css": "^3.7.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-notify": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-rsync": "0.0.8",
+    "gulp-postcss": "^7.0.0",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "vinyl-ftp": "^0.6.0"
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.0.0"
   }
 }
